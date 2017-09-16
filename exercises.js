@@ -65,7 +65,17 @@ console.log("My dog "+ dog.name + " is " + dog.age + " years old and like to " +
             
   Console.log the object.
 */
+var kicks =  {};
 
+kicks.brand = "Adidas";
+kicks.color = "red";
+kicks.size = 11.5;
+kicks.buy = function(){
+  return "hell yeah!";
+};
+
+console.log(kicks);
+console.log(kicks.buy());
 
 /* 
 
@@ -75,6 +85,12 @@ console.log("My dog "+ dog.name + " is " + dog.age + " years old and like to " +
             - add a property named `size` and set it to a number value between `0` and `20`.
             - add a property named `contents` and set it to be an empty array.
 */
+var plainBox = {};
+plainBox.color = "green";
+plainBox.size =  20;
+plainBox.contents = [];
+
+console.log(plainBox);
 
 
 /*
