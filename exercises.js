@@ -309,7 +309,15 @@ console.log(sumObj.output);
         Invoke your function and pass in your object (which should be `plainBox`), store the result to a variable named 
         plainBoxResult and use `console.log` to inspect your results.
  */
+ function putInPlainBox(obj){
+  for(var i = 0; i < 10; i ++){
+    var ranNum = Math.floor(Math.random() * 10);
+    obj.contents.push(ranNum);
+  }
 
+return obj;
+ }
+console.log(putInPlainBox(plainBox));
 
 /*
 11. Detecting transmission
@@ -321,6 +329,24 @@ console.log(sumObj.output);
 
     Invoke your function and pass in your stockCar object, store the result to a variable named isAutomaticTransmission and use `console.log` to inspect your results.
  */
+
+ function detectingTransmission(obj){
+ 
+    if(stockCar.automaticTransmission === true){
+    console.log("congrats your have autotransmission");
+
+  }else{
+    console.log("you need a new car!");
+  }
+
+}
+
+console.log(detectingTransmission(stockCar));
+
+
+
+
+
 
 
 /*
@@ -334,6 +360,16 @@ console.log(sumObj.output);
      Invoke your function and pass in your objects, store the result to a variable named stockCarWithDriver, and inspect 
       your results. Consider using `plainPerson` as your driver.
  */
+
+ function addPassengers(obj, person){
+  obj.driver = person;
+  return obj;
+
+ }
+
+ var stockCarWithDriver = addPassengers(stockCar, plainPerson);
+ console.log( stockCarWithDriver);
+
 
 
 /*
